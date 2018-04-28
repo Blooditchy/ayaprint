@@ -1,0 +1,41 @@
+// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+
+//миксины
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+
+// Глобальные подключения
+@import "./fonts/fonts.scss";
+@import "./layout/base.scss";
+@import "./layout/adjustment.scss";
+
+//Компоненты
+@import "./components/button.scss";
+
+//секции
+@import "./section/services.scss";
+@import "./section/popular.scss";
+@import "./section/options.scss";
+@import "./section/answers.scss";
+@import "./section/checkout.scss";
+@import "./section/questions.scss";
+@import "./section/footer.scss";
+
+// БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
+@import "./blocks/header.scss";
+@import "./blocks/services-menu.scss";
+@import "./blocks/services-content.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/popular-view.scss";
+@import "./blocks/price-list.scss";
+@import "./blocks/price-descr.scss";
+@import "./blocks/video-frame.scss";
+@import "./blocks/options-wrapp.scss";
+@import "./blocks/answers-acco.scss";
+@import "./blocks/form.scss";
+@import "./blocks/questions-row.scss";
+@import "./blocks/portfolio-descr.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/popup-menu.scss";
+
+

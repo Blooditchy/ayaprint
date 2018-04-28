@@ -1,0 +1,46 @@
+.price-wrapp {
+    @media only screen and (max-width: 480px) {
+        overflow: auto;
+    }
+}
+
+.price-list {
+    width: 100%;
+    border: 1px solid #DEEBF2;
+    margin-bottom: rem(20px);
+    & th {
+        padding: 22px;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 800;
+    }
+    & tbody tr:nth-child(odd) {
+        background-color: #DEEBF2;
+    }
+    & tbody tr td:not(:first-child):hover {
+        background-color: $btnColor;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.price-list__th  {
+    text-align: left;
+}
+
+.price-list__header {
+    background-color: #392D88;
+    text-align: center;
+    color: #fff;
+    width: 40%;
+}
+
+.price-list__item {
+    padding: 22px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    &:first-child {
+        text-align: left;
+    }
+}
+

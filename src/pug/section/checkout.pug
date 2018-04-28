@@ -1,0 +1,22 @@
+section.section.checkout
+    .main-page__container
+        form(action="#" method="post").form
+            fieldset.form__border
+                legend.form__legend
+                    span.legend-title Оформить заказ
+                .form__row
+                    input(type="text" required="required" name="user-name" id="user-name" placeholder="Ваше имя").form__input
+                    input(type="text" required="required" name="user-name" id="user-company" placeholder="Компания").form__input
+                .form__row
+                    input(type="email" required="required" name="user-name" id="user-name" placeholder="Email").form__input
+                    input(type="tel" required="required" name="user-name" id="user-name" placeholder="Телефон*").form__input
+                .form__row
+                    textarea(name="message" id="message" placeholder="Комментарий").form__message.form__input
+                .form__row
+                    .file-upload
+                        label
+                            input(type="file").form__file
+                            img(src="./static/img/icon/file-up.png", alt="")
+                            span Прикрепить файл
+                .form__row
+                    button(type="submit").btn.btn-form Отправить

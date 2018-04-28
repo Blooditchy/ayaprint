@@ -1,0 +1,27 @@
+.services-menu {
+    background-color: #392D88;
+    min-width: rem(185px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    @media only screen and (max-width: 960px) {
+        display: none;
+    }
+}
+
+.services-menu__link {
+    display: block;
+    min-width: rem(185px);
+    padding: rem(22px) 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: rem(14px);
+    font-weight: 700;
+    padding-left: rem(30px);
+    border-bottom: rem(1px) solid #493A98;
+    color: #fff;
+    transition: .2s linear;
+    &:hover {
+        background-color: #FF0264;
+    }
+}

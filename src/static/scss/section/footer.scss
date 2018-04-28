@@ -1,0 +1,127 @@
+.footer {
+    background-color: #2D2274;
+    padding-top: rem(80px);
+    position: relative;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.footer-left {
+    width: 20%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: rem(40px);
+    }
+}
+
+.footer-middle {
+    width: 50%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: rem(40px);
+    }
+}
+
+.footer-right {
+    width: 30%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.footer__title {
+    font-family: 'futura', Arial, Helvetica, sans-serif;
+    font-size: rem(16px);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: rem(2px);
+    padding-bottom: rem(30px);
+    margin-bottom: rem(30px);
+    position: relative;
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: $btnColor;
+        height: rem(2px);
+        width: rem(61px);
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.footer__link {
+    color: #fff;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: rem(24px);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-middle__inner {
+    display: flex;
+}
+
+.footer-middle__left {
+    margin-right: rem(70px);
+}
+
+.footer-right {
+    & .contacts {
+        width: 100%;
+        margin-bottom: rem(30px);
+        & .phone .phone__link {
+            color: #fff;
+        }
+        & .time-work {
+            color: #fff;
+        }
+        & .mail__link {
+            color: #ABC3EA;
+        }
+        @media only screen and (max-width: 960px) {
+            display: block;
+        }
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
+        @media only screen and (max-width: 480px) {
+            display: block;
+        }
+    }
+    & .adress {
+        width: 100%;
+        & .adress__text {
+            color: #fff;
+        }
+        &__link {
+            color: #ABC3EA;
+        }
+        @media only screen and (max-width: 960px) {
+            display: block;
+        }
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
+        @media only screen and (max-width: 480px) {
+            display: block;
+        }
+    }
+}
+
+.footer__tagline {
+    color: #fff;
+    margin-bottom: rem(33px);
+}
+
+.footer__title_sub {
+    margin-bottom: 0;
+    margin-top: rem(80px);
+}

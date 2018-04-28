@@ -1,0 +1,94 @@
+.popular-row {
+    display: flex;
+    margin-bottom: rem(30px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.popular-view__box {
+    width: 31.9%;
+    margin-right: rem(20px);
+    &:last-child {
+        margin-right: 0;
+    }
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.popular-view__title {
+    margin-bottom: rem(22px);
+    font-family: 'futura', Arial, Helvetica, sans-serif;
+    & a {
+        font-size: rem(18px);
+        color: #393185;
+        text-decoration: underline;
+        transition: .3s linear;
+        &:hover {
+            color: $btnColor;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        margin-top: rem(20px);
+    }
+}
+
+.popular-view__image {
+    transition: .3s linear;
+    &:hover {
+        box-shadow: rem(0px) rem(10px) rem(20px) rgba($btnColor, .5);
+        transform: scale(1.01);
+    }
+    & a {
+        display: block;
+    }
+    & img {
+        width: 100%;
+        max-width: rem(295px);
+        display: block;
+        @media only screen and (max-width: 480px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.popular-view__box_order {
+    margin-top: rem(43px);
+    border: 8px solid $btnColor;
+    position: relative;
+    transition: .3s linear;
+    & a {
+        display: block;
+        padding: rem(35px) rem(80px) rem(0px) rem(33px);
+        text-decoration: underline;
+        color: $btnColor;
+        height: 100%;
+        @media only screen and (max-width: 480px) {
+           padding-bottom: rem(80px);
+           padding-top: rem(80px);
+        }
+    }
+    &:hover a {
+        color: #392D88;
+    }
+    &:hover {
+        border: rem(8px) solid #392D88;
+    }
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: rem(22px);
+        width: rem(36px);
+        right: rem(33px);
+        bottom: rem(33px);
+        background: url('../img/icon/red-row.png') 0 0 no-repeat;
+    }
+}

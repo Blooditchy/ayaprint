@@ -1,0 +1,78 @@
+.answers-acco {
+    position: relative;
+}
+.answers-acco__link {
+    cursor: pointer;
+    font-size: rem(18px);
+    color: #393185;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.answers-acco__more {
+    display: none;
+}
+
+.answers-acco__close {
+    position: absolute;
+    right: rem(40px);
+    display: none;
+    color: #393185;
+    font-weight: 600;
+    font-size: rem(14px);
+    &:after {
+        display: inline-block;
+        content: '';
+        border-left: rem(2px) solid #393185;
+        border-top: rem(2px) solid #393185;
+        width: rem(8px);
+        height: rem(8px);
+        margin-left: rem(20px);
+        transform: rotate(45deg) translateY(5px);
+    }
+}
+
+.answers-acco__list {
+    counter-reset: number;
+    padding: rem(40px);
+    background-color: #f5fafe;
+}
+
+.answers-acco__item {
+    padding-left: 60px;
+    position: relative;
+    margin-bottom: rem(15px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:before {
+        position: absolute;
+        counter-increment: number;
+        content: counter(number)'.';
+        display: block;
+        left: 3%;
+        top: 37%;
+        z-index: 30;
+        transform: translate(-50%,-50%);
+    }
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 3%;
+        top: 37%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.active {
+    height: auto;
+}
+
+.active-close {
+    display: inline-block;
+}

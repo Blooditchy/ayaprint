@@ -1,0 +1,27 @@
+.price-desrc {
+    border-bottom: 1px solid #DEEBF2;
+    margin-bottom: rem(80px);
+}
+.price__title {
+    color: #393185;
+    font-weight: 600;
+    font-size: rem(14px);
+    margin-bottom: rem(15px);
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    
+}
+
+.price__text {
+    font-size: rem(14px);
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: rem(22px);
+    & p {
+        margin-bottom: rem(10px);
+    }
+    & p:last-child {
+        margin-bottom: 0;
+    }
+}

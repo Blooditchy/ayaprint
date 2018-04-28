@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Полиграфия от А до Я
+        link(rel="stylesheet", href="./static/css/normalize.css")
+        link(rel="stylesheet", href="./static/css/main.css")
+    body
+        .wrapper
+            include ../layout/header.pug
+            .main-page
+                include ../section/services.pug
+                include ../section/popular.pug
+                include ../section/price.pug
+                include ../section/options.pug
+                include ../section/answers.pug
+                include ../section/checkout.pug
+                include ../section/questions.pug
+                include ../section/portfolio.pug
+            include ../layout/footer.pug
+            .popup-menu
+                .popup-menu__wrapp
+                    .popup-menu__close
+                    nav.nav
+                        ul.popup-menu__list
+                            li.popup-menu__item
+                                a(href="javascript:void(0)").popup-menu__link Стоимость
+                            li.popup-menu__item 
+                                a(href="javascript:void(0)").popup-menu__link Выбор оплаты
+                            li.popup-menu__item
+                            a(href="javascript:void(0)").popup-menu__link Популярные тиражи
+                            li.popup-menu__item 
+                            a(href="javascript:void(0)").popup-menu__link Выбор оплаты
+
+        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaec54a9e9060bc754f7f217cb323e88030e2a42faf75cc039df095d056b6b98&amp;width=100%25&amp;height=550&amp;id=map&amp;lang=ru_RU&amp;scroll=fasle")
+        script(src="./static/js/jquery-3.3.1.min.js")
+        script(src="./static/js/plugins/jquery.bxslider.js")     
+        script(src="./static/js/plugins/jquery.fancybox.min.js")     
+        script(src="./static/js/main.js")     
+
+                        
+                            
+                                    
+
+
+
+
+
+                    
+                

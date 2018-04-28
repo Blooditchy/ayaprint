@@ -1,0 +1,34 @@
+.video-frame {
+    position: relative;
+    width: 100%;
+}
+
+.video-frame__preview {
+    display: block;
+    &:after {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: '';
+        background: rgba(#2e2771, .6);
+    }
+}
+
+.video-frame-pic {
+    display: block;
+    width: 100%;
+    max-width: rem(925px);
+}
+
+.video-start {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 100;
+}

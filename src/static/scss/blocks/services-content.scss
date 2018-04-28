@@ -1,0 +1,103 @@
+.services__content {
+    padding-top: rem(85px);
+    padding-bottom: rem(85px);
+    z-index: 10;
+    position: relative;
+    @media only screen and (max-width: 780px) {
+        display: none;
+    }
+}
+
+.services__title {
+    max-width: rem(925px);
+    font-size: rem(54px);
+    font-family: 'futura', Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: rem(100px);
+    position: relative;
+    padding-bottom: rem(70px);
+    margin-bottom: rem(60px);
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        width: rem(85px);
+        height: rem(3px);
+        background-color: $btnColor;
+    }
+    @media only screen and (max-width: 960px) {
+        font-size: rem(32px);
+        max-width: rem(725px);
+    }
+}
+
+.services__desrc {
+    display: flex;
+    justify-content: space-between;
+    margin-left: rem(210px);
+    @media only screen and (max-width: 960px) {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+}
+
+.services__desrc-text {
+    width: 33.33%;
+    color: #fff;
+    font-size: rem(30px);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    @media only screen and (max-width: 960px) {
+        width: 20%;
+        margin-right: 20px;
+    }
+}
+
+.services__desrc-sublist {
+    width: 33.33%;
+    font-size: rem(24px);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #fff;
+    & li {
+        position: relative;
+        padding-left: rem(40px);
+        line-height: rem(48px);
+        &:before {
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            width: rem(16px);
+            height: rem(13px);
+            background: url('../img/icon/check.png') center center no-repeat;
+            margin-right: rem(25px);
+
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        width: 50%;
+    }
+}
+
+.services__desrc-order {
+    width: 33.33%;
+    & span {
+        display: block;
+        font-weight: 700;
+        margin-bottom: rem(20px);
+        color: #fff;
+        font-size: rem(30px);
+    }
+    & .btn_width {
+        max-width: rem(295px);
+    }
+    @media only screen and (max-width: 960px) {
+        width: 100%;
+    }
+}

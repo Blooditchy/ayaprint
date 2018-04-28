@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    width: 100%;
+    max-width: rem(209px);
+    padding-top: rem(15px);
+    padding-bottom: rem(12px);
+    background-color: $btnColor;
+    text-align: center;
+    color: #fff;
+    font-size: rem(12px);
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: .2s linear;
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $btnColor;
+        color: $btnColor;
+        box-shadow: 0px 0px 10px rgba($btnColor, .5);
+    }
+}
