@@ -5,6 +5,16 @@
         flex-direction: column;
     }
 }
+.section__title_none  {
+    &:after {
+        display: none;
+    }
+}
+.section__title_position {
+    &:after {
+        left: -40%;
+    }
+}
 
 .options-left {
     width: 68.1%;

@@ -33,8 +33,24 @@
     color: #2e2771;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-weight: 600;
+    display: inline-block;
     &:hover {
         color: $btnColor;
+    }
+}
+
+.bookmarks__link {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        content: '';
+        background: url('../img/icon/star.png') center center no-repeat;
+        width: 12px;
+        height: 11px;
+        left: 0;
     }
 }
 

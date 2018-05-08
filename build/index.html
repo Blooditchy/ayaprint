@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Полиграфия от А до Я</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./static/css/normalize.css"/>
     <link rel="stylesheet" href="./static/css/main.css"/>
   </head>
@@ -393,7 +394,7 @@
           <div class="main-page__container">
             <div class="options-wrapp">
               <div class="options-left">
-                <div class="section__title">
+                <div class="section__title section__title_position">
                   <h3>Вырианты оплаты</h3>
                 </div>
                 <ul class="options__list">
@@ -418,7 +419,7 @@
                 </ul>
               </div>
               <div class="options-right">
-                <div class="section__title">
+                <div class="section__title section__title_none">
                   <h3>Варианты доставки</h3>
                 </div>
                 <ul class="options__list options__list_column">
@@ -602,9 +603,9 @@
           <div class="main-page__container">
             <div class="section__title">Портфолио</div>
             <div class="slider">
-              <div class="slider__item"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></div>
-              <div class="slider__item"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></div>
-              <div class="slider__item"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></div>
+              <div class="slider__item"><a class="slider__link" href="./static/img/slider/slide-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide2-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide3-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></a></div>
+              <div class="slider__item"><a class="slider__link" href="./static/img/slider/slide-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide2-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide3-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></a></div>
+              <div class="slider__item"><a class="slider__link" href="./static/img/slider/slide-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide2-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide2.jpg" alt=""/></a><a class="slider__link" href="./static/img/slider/slide3-big.jpg" data-fancybox="gallery"><img class="slider__pic" src="./static/img/slider/slide3.jpg" alt=""/></a></div>
             </div>
             <div class="portfolio-descr">
               <div class="portfolio-descr__content">
@@ -771,11 +772,31 @@
           </nav>
         </div>
       </div>
+      <div class="popup" id="popup">
+        <div class="popup__modal"><a class="popup__close" href="javascript:void()"></a>
+          <div class="popup__form">
+            <form action="">
+              <fieldset class="form__border form__border-popup">
+                <legend class="form__legend form__legend-popup"><span class="legend-title">Заказать звонок</span></legend>
+                <div class="form__row form__row-popup">
+                  <input class="form__input form__input-popup" type="text" required="required" name="user-name" id="user-name" placeholder="Ваше имя"/>
+                </div>
+                <div class="form__row form__row-popu">
+                  <input class="form__input form__input-popup" type="tel" required="required" name="user-name" id="user-name" placeholder="Телефон*"/>
+                </div>
+                <div class="form__row form__row-popu">
+                  <button class="btn btn-form" type="submit">Отправить</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaec54a9e9060bc754f7f217cb323e88030e2a42faf75cc039df095d056b6b98&amp;amp;width=100%25&amp;amp;height=550&amp;amp;id=map&amp;amp;lang=ru_RU&amp;amp;scroll=fasle"></script>
     <script src="./static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js">   </script>
     <script src="./static/js/plugins/jquery.bxslider.js">    </script>
-    <script src="./static/js/plugins/jquery.fancybox.min.js">    </script>
+    <script type="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaec54a9e9060bc754f7f217cb323e88030e2a42faf75cc039df095d056b6b98&amp;amp;width=100%25&amp;amp;height=550&amp;amp;id=map&amp;amp;lang=ru_RU&amp;amp;scroll=fasle"></script>
     <script src="./static/js/main.js">    </script>
   </body>
 </html>
