@@ -7,6 +7,12 @@
     @media only screen and (max-width: 480px) {
         flex-direction: column;
     }
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.is-showing {
+    opacity: 1 !important;
 }
 
 .popular-view__box {

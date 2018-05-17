@@ -16,6 +16,11 @@
 
 .popup-menu__list {
     padding: rem(30px);
+    padding-top: rem(60px);
+}
+
+.popup-menu__item {
+    border-bottom: 1px solid white;
 }
 
 .popup-menu__link {
